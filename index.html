@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <title>PSDPractice</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!------HEADER & BANNER------>
+        <header>
+            <!--#####TOP NAV#####-->
+            <div class="top-nav">
+                <div class="container">
+                    <div class="widgets-top">
+                        <div class="language">
+                            <a href="http://">English
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="currency">
+                            <a href="http://">Dollar(US)
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="welcome-message">
+                        <p>Wellcome to Complex store!</p>
+                    </div>
+                    <span class="lock-icon">
+                        <a href="http://">
+                            <ion-icon name="lock"></ion-icon> My Account
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <!--HEADER-->
+            <div class="header">
+                <div class="container">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="LogoImage" class="logo-image">
+                    </div>
+                    <div class="widget-shopping-cart">
+                        <img src="images/layer_589.png" alt="WidgetShoppingCart" class="widget-shopping-cart-image">
+                        <p>My cart</p>
+                    </div>
+                    <div class="searchform">
+                        <button class="hidden-element more" type="button">All categories
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                        <input type="text" placeholder="Search here..." class="searchbox">
+                        <button class="searchbtn" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+            <!--NAV CHINH-->
+            <div class="nav">
+                <div class="container">
+                    <div class="left-menu">
+                        <div class="left-menu-1">
+                            <p style="font-size: 1.5rem; margin: 13px">
+                                <ion-icon name="menu"></ion-icon>
+                            </p>
+                        </div>
+                        <div class="left-menu-2">
+                            <p>All Categories</p>
+                        </div>
+                        <div class="left-menu-3">
+                            <p style="float: right;">
+                                <ion-icon name="arrow-dropdown"></ion-icon>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hide-menu-left">
+                        <div class="submenu-1">
+                            <p>HOME
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div class="submenu-2">
+                            <p>SHOP
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div class="submenu-3">
+                            <p>DIGITAL</p>
+                        </div>
+                        <div class="submenu-4">
+                            <p>BLOG</p>
+                        </div>
+                        <div class="submenu-5">
+                            <p>PAGE
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                        <div class="submenu-6">
+                            <p>PORTFOLIO
+                            </p>
+                        </div>
+                        <div class="submenu-7">
+                            <p>CONTACT US</p>
+                        </div>
+                    </div>
+                    <div class="right-menu">
+                        <div class="submenu-7">
+                            <p>Electronic & Digital</p>
+                        </div>
+                        <div class="submenu-8">
+                            <p>Phones & Accessories</p>
+                        </div>
+                        <div class="submenu-9">
+                            <p>Home & Kitchen</p>
+                        </div>
+                        <div class="submenu-10">
+                            <p>Sport & Outdoors</p>
+                        </div>
+                        <div class="submenu-11">
+                            <p>Health & Beauty</p>
+                        </div>
+                        <div class="submenu-12">
+                            <p>Toys & Hobbies</p>
+                        </div>
+                        <div class="submenu-13">
+                            <p>Book & Office</p>
+                        </div>
+                        <div class="submenu-14">
+                            <p>Cameras & Camcorders</p>
+                        </div>
+                        <div class="submenu-15">
+                            <p>Sport & Outdoors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="clear"></div>
+        <!--SLIDE-->
+        <div class="slider">
+            <img class="slide" src="images/revo11.jpg" alt="" stt="0">
+            <img class="slide" src="images/revo12.jpg" alt="" stt="1" style="display: none;">
+            <img class="slide" src="images/revo13.jpg" alt="" stt="2" style="display: none;">
+            <div style="position: absolute; top: 0; left: 10px; display: flex; flex: 0 1 40vw; align-items: center; height: 100%;">
+                <button class="fas fa-chevron-left prev" style="background: none; border: none;"></button>
+            </div>
+            <div style="position: absolute; top: 0; right: 10px; display: flex; flex: 0 1 40vw; align-items: center; height: 100%;">
+                <button class="fas fa-chevron-right next" style="background: none; border: none;"></button>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <!--################################CONTENT####################################-->
+        <div class="content">
+            <div class="container">
+                <div class="section-element">
+                    <div class="boxImg">
+                        <a href="http://">
+                            <img src="images/banner12.jpg" alt="" style="float: left;">
+                        </a>
+                        <a href="http://">
+                            <img src="images/banner13.jpg" alt="" style="margin: 0 2%;">
+                        </a>
+                        <a href="http://">
+                            <img src="images/banner14.jpg" alt="" style="float: right;">
+                        </a>
+                    </div>
+                </div>
+                <div class="new-products">
+                    <div class="title">
+                        <p>New Products</p>
+                        <div class="owl-nav">
+                            <span class="fas fa-chevron-left" style="padding-right: 13px; border-right: 1px #E0E0E0 solid"></span>
+                            <span class="fas fa-chevron-right" style="padding-left: 10px"></span>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="products md-01">
+                            <div class="products-item">
+                                <div class="image-form img-ipad">
+                                    <img src="images/new-product-1.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <p class="tag">
+                                        <a href="#">Finibus Bonorum et</a>
+                                    </p>
+                                    <p class="dollar">$60.00</p>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="image-form img-ipad">
+                                    <img src="images/new-product-2.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <p class="tag">
+                                        <a href="#">Therefore always free</a>
+                                    </p>
+                                    <p class="dollar">$60.00</p>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="image-form img-ipad">
+                                    <img src="images/new-product-3.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <p class="tag">
+                                        <a href="#">Come from a</a>
+                                    </p>
+                                    <p class="dollar">$60.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products md-02-ipad">
+                            <div class="products-item">
+                                <div class="image-form">
+                                    <img src="images/new-product-1.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <p class="tag">
+                                        <a href="#">College in Virginia</a>
+                                    </p>
+                                    <p class="dollar">$60.00</p>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="image-form">
+                                    <img src="images/new-product-2.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <p class="tag">
+                                        <a href="#">There are many</a>
+                                    </p>
+                                    <p class="dollar">$60.00</p>
+                                </div>
+                            </div>
+                            <div class="products-item">
+                                <div class="image-form">
+                                    <img src="images/new-product-3.jpg" alt="">
+                                </div>
+                                <div class="detail">
+                                    <p class="tag">
+                                        <a href="#">Established fact</a>
+                                    </p>
+                                    <p class="dollar">$60.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-of-the-week">
+                    <div class="title">
+                        <p>Deals Of The Week</p>
+                        <div class="owl-nav">
+                            <span class="fas fa-chevron-left" style="padding-right: 13px; border-right: 1px #E0E0E0 solid"></span>
+                            <span class="fas fa-chevron-right" style="padding-left: 10px"></span>
+                        </div>
+                    </div>
+                    <div class="deals-of-the-week-form">
+                        <img src="images/10digital.jpg" alt="">
+                        <div class="info">
+                            <p style="color: #989898; padding-top: 10px; margin: 0;">Desktop, Laptop</p>
+                            <p style="color: #333e48; font-size: 18px; font-weight: bold; margin: 0; padding-top: 10px;">Survival Paracord</p>
+                            <p class="dollar">$150.00</p>
+                            <p style="color: gray; font-size: 14px">The Frankie Sweatshirt is your best friend at long afternoon stadium stints or winter trailside
+                                campsites. The soft fleece fabric keeps you toasty</p>
+                            <p style="color: #333e48; font-size: 14px; font-weight: bold">Hurry up! Special offer:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--########################LIST PRODUCTS################################-->
+        <div class="list-product">
+            <div class="margin"></div>
+            <div class="container">
+                <div class="electronic-and-computer">
+                    <div class="title" style="margin-top: 1em;">
+                        <p>ELECTRONICS & COMPUTERS</p>
+                    </div>
+                    <div class="margin"></div>
+                    <div class="box-sp">
+                        <div class="margin"></div>
+                        <div class="nav-sp">
+                            <ul>
+                                <li>
+                                    <a href="#">Cell Phones</a>
+                                </li>
+                                <li>
+                                    <a href="#">Desktops</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tablets</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="group md-01">
+                                <div class="group-1">
+                                    <div class="detail dt1">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Cell phones, Desktop</p>
+                                        <p class="tag">Skmei Luxury Brand</p>
+                                        <p class="dollar">$100.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                    <div class="detail dt2">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Dektop, TV, Video, Desktop</p>
+                                        <p class="tag">Original New Samsung</p>
+                                        <p class="dollar">$60.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group md-02">
+                                <div class="group-1">
+                                    <div class="detail dt1">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Laptop, Tablets</p>
+                                        <p class="tag">New Samsung Galaxy</p>
+                                        <p class="dollar">$200.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                    <div class="detail dt2">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Laptop, Tablets</p>
+                                        <p class="tag">JBL Xtreme Partabl.</p>
+                                        <p class="dollar">$22.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-2-column hidden-element">
+                    <div class="left">
+                        <img src="images/banner21.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <img src="images/banner22.jpg" alt="">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="fashion-and-cloting">
+                    <div class="title" style="margin-top: 1em;">
+                        <p>FASHION & CLOTHING</p>
+                    </div>
+                    <div class="margin"></div>
+                    <div class="box-sp">
+                        <div class="margin"></div>
+                        <div class="nav-sp">
+                            <ul>
+                                <li>
+                                    <a href="#">Clothing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shoes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kids</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="group md-01">
+                                <div class="group-1">
+                                    <div class="detail dt1">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Ctlothing, Handbug</p>
+                                        <p class="tag">Survival Paracord</p>
+                                        <p class="dollar">$100.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                    <div class="detail dt2">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Clothing, Kids</p>
+                                        <p class="tag">Emergency Bracelet Rope</p>
+                                        <p class="dollar">$60.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group md-02">
+                                <div class="group-1">
+                                    <div class="detail dt1">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Cell phones, Desktop</p>
+                                        <p class="tag">Skmei Luxury Brand</p>
+                                        <p class="dollar">$200.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                    <div class="detail dt2">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Cell phones, Desktop</p>
+                                        <p class="tag">Cord Emergency Kit</p>
+                                        <p class="dollar">$90.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-1-column hidden-element">
+                    <div>
+                        <img src="images/banner23.jpg" alt="">
+                    </div>
+                </div>
+                <div class="electronic-and-computer">
+                    <div class="title" style="margin-top: 1em;">
+                        <p>HOME GARDEN & KITCHEN</p>
+                    </div>
+                    <div class="margin"></div>
+                    <div class="box-sp">
+                        <div class="margin"></div>
+                        <div class="nav-sp">
+                            <ul>
+                                <li>
+                                    <a href="#">Handbag</a>
+                                </li>
+                                <li>
+                                    <a href="#">Batereries</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shoes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="group md-01">
+                                <div class="group-1">
+                                    <div class="detail dt1">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Battereries, Handbag</p>
+                                        <p class="tag">Light Green</p>
+                                        <p class="dollar">$100.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                    <div class="detail dt2">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Battereries, Handbag</p>
+                                        <p class="tag">The Soft Fleece</p>
+                                        <p class="dollar">$60.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group md-02">
+                                <div class="group-1">
+                                    <div class="detail dt1">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Battereries, Shoes</p>
+                                        <p class="tag">Hand Pockets</p>
+                                        <p class="dollar">$100.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                    <div class="detail dt2">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Battereries, Shoes</p>
+                                        <p class="tag">Original New Samsung</p>
+                                        <p class="dollar">$60.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-2-column hidden-element">
+                    <div class="left">
+                        <img src="images/banner15.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <img src="images/banner16.jpg" alt="">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="electronic-and-computer">
+                    <div class="title" style="margin-top: 1em;">
+                        <p>GIFT & HANDMADE</p>
+                    </div>
+                    <div class="margin"></div>
+                    <div class="box-sp">
+                        <div class="margin"></div>
+                        <div class="nav-sp">
+                            <ul>
+                                <li>
+                                    <a href="#">Men</a>
+                                </li>
+                                <li>
+                                    <a href="#">Headsets</a>
+                                </li>
+                                <li>
+                                    <a href="#">Women</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <div class="group md-01">
+                                <div class="group-1">
+                                    <div class="detail dt1">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Cell phones, Desktop</p>
+                                        <p class="tag">Skmei Luxury Brand</p>
+                                        <p class="dollar">$100.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                    <div class="detail dt2">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Cell phones, Desktop</p>
+                                        <p class="tag">Original New Samsung</p>
+                                        <p class="dollar">$60.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group md-02">
+                                <div class="group-1">
+                                    <div class="detail dt1">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Cell phones, Desktop</p>
+                                        <p class="tag">Skmei Luxury Brand</p>
+                                        <p class="dollar">$100.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                    <div class="detail dt2">
+                                        <div class="image-form">
+                                            <img src="images/1digital.jpg" alt="">
+                                        </div>
+                                        <p style="color: #989898; padding-top: 10px; margin: 0;">Cell phones, Desktop</p>
+                                        <p class="tag">Original New Samsung</p>
+                                        <p class="dollar">$60.00</p>
+                                        <button class="btn-sp">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-1-column hidden-element">
+                    <div>
+                        <img src="images/banner17.jpg" alt="">
+                    </div>
+                </div>
+                <div class="latest-posts-blog">
+                    <div class="title">
+                        <p>LATEST POSTS BLOG</p>
+                        <div class="owl-nav">
+                            <span class="fas fa-chevron-left" style="padding-right: 13px; border-right: 1px #E0E0E0 solid"></span>
+                            <span class="fas fa-chevron-right" style="padding-left: 10px"></span>
+                        </div>
+                    </div>
+                    <div class="box" style="margin-top: 1em;">
+                        <div class="latest-posts-blog-form md1">
+                            <img src="images/1-590x350.jpg" alt="">
+                            <div class="blog-text">
+                                <p class="text-1">Hello World</p>
+                                <div class="clear"></div>
+                                <p class="text-2">Suspendisse turpis ipsum, tempus in nulla eu, posuere pharetra nibh. In dignissim vitae lorem
+                                    non mollis. Praesent pretium tellus in …</p>
+                                <a href="#" class="readmore-form">
+                                    <span class="readmore-text">Read more
+                                        <span class="fa fa-angle-right"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="latest-posts-blog-form hidden-element md2">
+                            <img src="images/2-3-590x350.jpg" alt="">
+                            <div class="blog-text">
+                                <p class="text-1">Curabitur lobortis</p>
+                                <div class="clear"></div>
+                                <p class="text-2">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere
+                                    libero eu augue condimentum rhoncus. Praesent …</p>
+                                <a href="#" class="readmore-form">
+                                    <span class="readmore-text">Read more
+                                        <span class="fa fa-angle-right"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="latest-posts-blog-form hidden-element md3">
+                            <img src="images/3-590x350.jpg" alt="">
+                            <div class="blog-text">
+                                <p class="text-1">Vivamus gravida</p>
+                                <div class="clear"></div>
+                                <p class="text-2">Suspendisse turpis ipsum, tempus in nulla eu, posuere pharetra nibh. In dignissim vitae lorem
+                                    non mollis. Praesent pretium tellus in …</p>
+                                <a href="#" class="readmore-form">
+                                    <span class="readmore-text">Read more
+                                        <span class="fa fa-angle-right"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="latest-posts-blog-form hidden-element md4">
+                            <img src="images/4-590x350.jpg" alt="">
+                            <div class="blog-text">
+                                <p class="text-1">Post Format:Image</p>
+                                <div class="clear"></div>
+                                <p class="text-2">Suspendisse turpis ipsum, tempus in nulla eu, posuere pharetra nibh. In dignissim vitae lorem
+                                    non mollis. Praesent pretium tellus in …</p>
+                                <a href="#" class="readmore-form">
+                                    <span class="readmore-text">Read more
+                                        <span class="fa fa-angle-right"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vc-custom-1">
+                    <div class="vc-custom-1-form">
+                        <p class="text-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis quae omnis ipsam? Molestiae
+                            eveniet laudantium commodi velit consectetur reiciendis reprehenderit quam nostrum, enim obcaecati
+                            doloribus tempore id laboriosam quaerat modi.</p>
+                    </div>
+                    <div class="margin"></div>
+                    <div class="author-form">
+                        <div class="by-author">
+                            <span class="author-name">
+                                ADMIN
+                            </span>
+                            <span class="author-byline">
+                                CEO of Lion
+                            </span>
+                        </div>
+                        <div class="image">
+                            <img src="images/avata1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="vc-custom-2">
+                    <div class="vc-custom-2-form">
+                        <div class="feature_text_widget">
+                            <div class="feature_icon">
+                                <a hreh="#" class="far fa-paper-plane"></a>
+                            </div>
+                            <div class="feature_content">
+                                <div class="feature_text">Free shipping</div>
+                                <div class="short_desc">Free for all over oder $100.00</div>
+                            </div>
+                        </div>
+                        <div class="feature_text_widget">
+                            <div class="feature_icon">
+                                <a hreh="#" class="fas fa-history"></a>
+                            </div>
+                            <div class="feature_content">
+                                <div class="feature_text">MONEY COME BACK</div>
+                                <div class="short_desc">100% Money Back 30 days</div>
+                            </div>
+                        </div>
+                        <div class="feature_text_widget">
+                            <div class="feature_icon">
+                                <a hreh="#" class="far fa-comment"></a>
+                            </div>
+                            <div class="feature_content">
+                                <div class="feature_text">24/7 SUPPORT</div>
+                                <div class="short_desc">Service support fast 24/7</div>
+                            </div>
+                        </div>
+                        <div class="feature_text_widget">
+                            <div class="feature_icon">
+                                <a hreh="#" class="fas fa-users" style="margin: 11px"></a>
+                            </div>
+                            <div class="feature_content">
+                                <div class="feature_text">MEMBER DISCOUNT</div>
+                                <div class="short_desc">Upto 40% Discount</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--######################FOOTER#######################-->
+        <footer id="site-footer">
+            <div class="footer">
+                <div class="footer-widget-top">
+                    <div class="container">
+                        <div class="container-inner">
+                            <div class="margin"></div>
+                            <div class="textwidget">sign up to
+                                <strong style="font-size: 24px"> newsletter &amp; free shipping </strong>for first shopping</div>
+                            <form class="subscribe-form">
+                                <div>
+                                    <p>
+                                        <label class="lblname">Email address: </label>
+                                        <input class="email" type="email" name="EMAIL" placeholder="Your email address" required="">
+                                    </p>
+                                    <p>
+                                        <input class="subscribe" type="submit" value="subscribe!">
+                                    </p>
+                                </div>
+                            </form>
+                            <div class="margin"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="box so1">
+                            <div class="widget-footer">
+                                <div class="row">
+                                    <div class="textwidget-top">
+                                        <p>
+                                            <img src="images/logo.png" alt="logo" width="143" height="91">
+                                        </p>
+                                        <p>
+                                            <strong>Complex</strong> is a premium Templates theme with advanced admin module. It’s
+                                            extremely customizable.
+                                        </p>
+                                        <p>
+                                            <i class="fa fa-map-marker"></i>
+                                            <strong>Address:</strong> 1234 Street Name, City Name, United States</p>
+                                        <p>
+                                            <i class="fa fa-envelope"></i>
+                                            <strong>Email:</strong> mail@example.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-footer">
+                                <div class="row">
+                                    <h3 class="widget-title">
+                                        <span>Information</span>
+                                    </h3>
+                                    <div class="menu-information-container">
+                                        <ul id="menu-information" class="menu">
+                                            <li>
+                                                <a href="http://demo.lion-themes.net/complex/about-us/">About us</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo.lion-themes.net/complex/contact-us/">Contact us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">All Collection</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Privacy policy</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Terms &amp; conditio</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box so2">
+                            <div class="widget-footer">
+                                <div class="row">
+                                    <h3 class="widget-title">
+                                        <span>Custom Links</span>
+                                    </h3>
+                                    <div class="menu-custom-links-container">
+                                        <ul id="menu-custom-links" class="menu">
+                                            <li>
+                                                <a href="http://demo.lion-themes.net/complex/my-account/">My Account</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo.lion-themes.net/complex/checkout/">Checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo.lion-themes.net/complex/cart/">Cart</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo.lion-themes.net/complex/category/videos/">Videos</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://demo.lion-themes.net/complex/category/wordpress/">WordPress</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-footer">
+                                <div class="row">
+                                    <h3 class="widget-title">
+                                        <span>On Sale</span>
+                                    </h3>
+                                    <div class="product_list_widget">
+                                        <div class="product_list_widget_item">
+                                            <div class="product_list_widget_image">
+                                                <img src="images/6digital.jpg" alt="">
+                                            </div>
+                                            <div class="detail-footer">
+                                                <p class="tag tag-footer">Finibus Bonorum et</p>
+                                                <p class="dollar dollar-footer">$60.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="product_list_widget_item">
+                                            <div class="product_list_widget_image">
+                                                <img src="images/7digital.jpg" alt="">
+                                            </div>
+                                            <div class="detail-footer">
+                                                <p class="tag tag-footer">Finibus Bonorum et</p>
+                                                <p class="dollar dollar-footer">$60.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="container-inner">
+                        <div>
+                            <div class="widget-copyright"> Copyright ©
+                                <a href="#">Lionthemes88</a> . All Rights Reserved.</div>
+                        </div>
+                        <div>
+                            <div class="widget-payment">
+                                <img src="images/payment.png" alt="payment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@4.2.1/dist/ionicons.js"></script>
+</body>
+
+</html>
