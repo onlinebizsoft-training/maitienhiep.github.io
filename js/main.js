@@ -23,6 +23,15 @@ function showMenu() {
       $(this).addClass("active");
     }
   });
+  $(".left-menu-4").click(function() {
+    if ($(this).hasClass("active")) {
+      $(".catg-menu").slideUp();
+      $(this).removeClass("active");
+    } else {
+      $(".catg-menu").slideDown();
+      $(this).addClass("active");
+    }
+  });
 }
 
 function slideShow() {
