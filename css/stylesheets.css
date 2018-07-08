@@ -94,6 +94,7 @@ p {
   width: 25px;
   height: 25px;
   margin-left: 35px;
+  cursor: pointer;
 }
 .widget-text {
   text-align: center;
@@ -314,7 +315,7 @@ p {
   height: 120px;
 }
 .add-to-cart {
-  margin-top: 10px;
+  margin-top: 5px;
   height: 35px;
   color: #a7a7a7;
   background: none;
@@ -454,6 +455,123 @@ p {
 .member-discount .name {
   padding-top: 1em;
 }
+.footer-widgets-top {
+  background: #be001c;
+  height: 150px;
+}
+.container-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subscribe {
+  display: table;
+  vertical-align: middle;
+}
+.text-widgets{
+  width: 100%;
+}
+.subscribe{
+  width: 100%;
+}
+.text-widgets p {
+  text-transform: uppercase;
+  line-height: 24px;
+  text-align: center;
+}
+.text-widgets p strong {
+  font-size: 24px;
+}
+.subscribe .text-sub {
+  height: 50px;
+  width: 75%;
+  padding-left: 2em;
+  border: unset;
+  border-radius: 50px 0 0 50px;
+}
+.subscribe .btn-sub {
+  height: 50px;
+  width: 25%;
+  border: unset;
+  border-radius: 0 50px 50px 0;
+  text-transform: uppercase;
+  background: #212833;
+  font-weight: bold;
+  color: #fff;
+  transition: background 500ms ease;
+}
+.subscribe .btn-sub:hover{
+  background: #85171a;
+}
+.footer-widgets-bot{
+  border-bottom: 1px solid #e1e1e1;
+}
+.footer-widgets-bot-form{
+  padding: 2em 0;
+}
+.footer-widgets-bot-form p{
+  color: #7c8086;
+  font-weight: 24px;
+  padding: 10px 0;
+}
+.logo-form{
+  height: 130px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-form p{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #363f4a;
+}
+.footer-widgets-bot-form img{
+  padding: 1em 0;
+  width: 160px;
+}
+.hihi ul{
+  padding: 0;
+  margin: 0;
+}
+.hihi ul li{
+  list-style: none;
+  padding: 1em 0;
+}
+.hihi .catg{
+  display: flex;
+  flex-direction: colum;
+}
+.catg{
+  width: 100%;
+  padding: 10px 0;
+}
+.catg img{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e1e1e1;
+}
+.catg p{
+  padding-bottom: 0;
+  padding-left: 1em;
+}
+.copyright{
+  height: 100px;
+}
+.cp-form{
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.widget-payment{
+  width: 100%;
+}
+.widget-payment img{
+  width: 100%;
+}
 /*Tablet nhỏ(480 x 640)*/
 @media screen and (min-width: 480px) {
   .deals-of-the-week-form {
@@ -479,7 +597,7 @@ p {
     width: 49%;
   }
   .latest-posts-blog-form img {
-    height: 220px;
+    height: 180px;
   }
 }
 /*Ipad dọc(768 x 1024)*/
@@ -542,12 +660,6 @@ p {
     width: 120px;
     height: 120fpx;
   }
-  .arrival-form .group .box .detail .dollar {
-    float: left;
-  }
-  .arrival-form .group .box .detail .add-to-cart {
-    float: right;
-  }
   .gerenal .title {
     display: flex;
     justify-content: space-between;
@@ -588,8 +700,28 @@ p {
   .latest-posts-blog-form {
     width: 32%;
   }
+  .latest-posts-blog-form img{
+    height: 160px;
+  }
   .blog-3 {
     display: block;
+  }
+  .footer-widgets-top .container-inner{
+    flex-direction: unset;
+    width: 100%;
+    align-items: center;
+  }
+  .footer-widgets-top .text-widgets{
+    width: 50%;
+  }
+  .footer-widgets-top .subscribe{
+    width: 50%;
+  }
+  .footer-widgets-top .subscribe .text-sub{
+    width: 65%;
+  }
+  .footer-widgets-top .subscribe .btn-sub{
+    width: 35%;
   }
 }
 /*Ipad ngang(1024 x 768)*/
@@ -638,7 +770,7 @@ p {
     width: 20%;
   }
   .widget-img {
-    margin-left: 32px;
+    margin-left: 35px;
   }
   .widget-shopping-cart,
   .widget-your-wishlist {
@@ -652,12 +784,18 @@ p {
     justify-content: space-between;
     align-items: center;
   }
-  .left-menu-1 {
+  .left-menu-4 {
+    display: block;
     order: 2;
+  }
+  .left-menu-4 p:hover{
+    color: #252a37;
   }
   .left-menu-2 {
     order: 1;
     padding-left: 1em;
+    border: none;
+    float: none;
   }
   .left-menu-1:hover {
     background: unset;
@@ -668,28 +806,27 @@ p {
   .left-menu p {
     margin: 0;
   }
-  .hide-menu-left {
+  .menu-show {
     display: block;
     width: 73%;
     float: right;
     display: flex;
     flex: unset;
   }
-  .hide-menu-left [class^="submenu"] {
+  .catg-menu{
+    display: block;
+  }
+  .menu-show [class^="submenu"] {
     display: flex;
     background: #fff;
   }
-  .hide-menu-left [class^="submenu"] p {
+  .menu-show [class^="submenu"] p {
     padding: 0;
     color: #202833;
     font-weight: bold;
   }
   .left-menu-1 {
-    border: none;
-  }
-  .left-menu-2 {
-    border: none;
-    float: none;
+    display: none;
   }
   .section-element {
     display: block;
@@ -812,44 +949,21 @@ p {
   .selector-element div {
     width: 23.5%;
   }
-  .footer-widgets-top {
-    background: #be001c;
-    height: 150px;
-  }
-  .container-inner {
+  .footer-widgets-bot-form{
     display: flex;
-    align-items: center;
-    height: 100%;
+    justify-content: space-between;
   }
-  .text-widgets {
-    display: table-cell;
-    vertical-align: middle;
-    width: 50%;
+  .hihi{
+    width: 23.5%;
   }
-  .subscribe {
-    width: 50%;
-    display: table;
-    vertical-align: middle;
+  .cp-form{
+    flex-direction: unset;
+    justify-content: space-between;
   }
-  .text-widgets p {
-    text-transform: uppercase;
-    line-height: 24px;
+  .widget-copyright{
+    width: 40%;
   }
-  .text-widgets p strong {
-    font-size: 24px;
-  }
-  .subscribe .text-sub {
-    height: 50px;
-    width: 75%;
-    padding-left: 2em;
-    border: unset;
-    border-radius: 50px 0 0 50px;
-  }
-  .subscribe .btn-sub {
-    height: 50px;
-    width: 25%;
-    border: unset;
-    border-radius: 0 50px 50px 0;
-    text-transform: uppercase;
+  .widget-payment{
+    width: 40%;
   }
 }
