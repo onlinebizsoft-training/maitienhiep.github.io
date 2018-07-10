@@ -650,9 +650,15 @@ p {
   .latest-posts-blog-form img {
     height: 180px;
   }
+  .gerenal .catg-left{
+    display: none;
+  }
 }
 /*Ipad dọc(768 x 1024)*/
 @media screen and (min-width: 768px) {
+  .header{
+    height: 120px;
+}
   .top-nav {
     height: 38px;
   }
@@ -871,6 +877,7 @@ p {
     top: 50px;
     width: 100%;
     border: 1px solid #e1e1e1;
+    display: block;
   }
   .catg-menu [class^="submenu"] {
     background: #fff;
@@ -1068,5 +1075,9 @@ p {
   .custom{
     box-shadow: unset;
     border-radius: unset;
+  }
+  .custom2{
+    border-radius: unset;
+    box-shadow: unset;
   }
 }

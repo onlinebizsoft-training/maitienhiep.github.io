@@ -102,7 +102,7 @@ function stickyHeader() {
   // Xác định, kiểm tra điều kiện kích thước trình duyệt để tùy từng giao diện hiển thị nav khác nhau.
   if(window.innerWidth < 768){
     $(window).scroll(function() {
-      if ($(window).scrollTop() >= 366.66) {
+      if ($(window).scrollTop() >= 316.66) {
         $(".left-menu").addClass("fixed-header");
         $(this).addClass("visible-title");
       } else {
@@ -112,7 +112,7 @@ function stickyHeader() {
     });
   } else if(window.innerWidth <= 1024){
     $(window).scroll(function() {
-      if ($(window).scrollTop() >= 208) {
+      if ($(window).scrollTop() >= 158) {
         $(".left-menu").addClass("fixed-header");
         $(this).addClass("visible-title");
       } else {
@@ -123,15 +123,15 @@ function stickyHeader() {
   } else {
     $(window).scroll(function() {
       if ($(window).scrollTop() >= 138) {
-        $('.left-menu').addClass("custom");
-        $('.catg-menu').slideUp();
         $(".nav").addClass("fixed-header");
         $(this).addClass("visible-title");
+        $(".left-menu").addClass("custom2");
+        $('.catg-menu').slideUp();
       } else {
-        $('.left-menu').removeClass("custom");
-        $('.catg-menu').slideDown();
         $(".nav").removeClass("fixed-header");
         $(this).removeClass("visible-title");
+        $(".left-menu").removeClass("custom2");
+        $('.catg-menu').slideDown();
       }
     });
   }
