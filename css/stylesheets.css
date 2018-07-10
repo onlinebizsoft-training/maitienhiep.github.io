@@ -618,6 +618,7 @@ p {
   left: 0;
   width: 100%;
   border-radius: unset;
+  z-index: 99;
 }
 .visible-title {
   visibility: visible;
