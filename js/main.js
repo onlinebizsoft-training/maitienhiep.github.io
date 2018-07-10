@@ -110,7 +110,7 @@ function stickyHeader() {
         $(this).removeClass("visible-title");
       }
     });
-  } else if(window.innerWidth <= 1024){
+  } else if(window.innerWidth < 1024){
     $(window).scroll(function() {
       if ($(window).scrollTop() >= 158) {
         $(".left-menu").addClass("fixed-header");
