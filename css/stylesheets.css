@@ -142,6 +142,7 @@ p {
   border-radius: 10px 10px 0 0;
   box-shadow: 2px 2px 10px #888888;
   position: relative;
+  z-index: 99;
 }
 .left-menu-1 {
   width: 50px;
@@ -172,7 +173,10 @@ p {
 }
 .hide-menu-left {
   width: 100%;
-  margin: 0 auto;
+  position: absolute;
+  z-index: 99;
+  top: 50px;
+  box-shadow: 2px 2px 10px #888888;
   display: none;
 }
 [class^="submenu"] {
@@ -188,6 +192,8 @@ p {
   padding-left: 1em;
   margin: 0;
   color: #fff;
+  font-weight: unset;
+  font-size: 13px
 }
 [class^="submenu"]:hover {
   background: #fff;
@@ -197,12 +203,15 @@ p {
 }
 .right-menu {
   width: 100%;
-  margin: 0 auto;
+  position: absolute;
+  top: 50px;
   display: none;
 }
-/*==============================
-    SLIDE
-    ==============================*/
+.right-menu [class^="submenu"] p{
+  text-transform: unset;
+}
+
+/* SLIDE */
 .slider {
   width: 100%;
   position: relative;
@@ -218,9 +227,7 @@ p {
   font-size: 30px;
   text-decoration: none;
 }
-/*==============================
-    CONTENT
-    ==============================*/
+/* CONTENT */
 .section-element {
   display: none;
 }
@@ -472,8 +479,7 @@ p {
   justify-content: center;
 }
 .subscribe {
-  display: table;
-  vertical-align: middle;
+  display: flex;
 }
 .text-widgets {
   width: 100%;
@@ -498,7 +504,7 @@ p {
 }
 .subscribe .btn-sub {
   height: 50px;
-  width: 38%;
+  width: 40%;
   border: unset;
   border-radius: 0 50px 50px 0;
   text-transform: uppercase;
@@ -578,6 +584,45 @@ p {
 .widget-payment img {
   width: 100%;
 }
+
+/* BACK TO TOP */
+.scrollToTop{
+  width: 50px; 
+  height: 50px;
+  text-align:center;
+  font-weight: bold;
+  text-decoration: none;
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #363f4a;
+}
+.scrollToTop .scrollIcon{
+  width: 50px;
+  height: 50px;
+  color: #363f4a;
+}
+.scrollToTop:hover{
+  background: #363f4a;
+}
+.scrollToTop:hover .scrollIcon{
+  color: #fff;
+}
+
+/* STICKY HEADER ON SCROLL */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: unset;
+}
+.visible-title {
+  visibility: visible;
+}
+
 /*Tablet nhỏ(480 x 640)*/
 @media screen and (min-width: 480px) {
   .deals-of-the-week-form {
@@ -716,12 +761,13 @@ p {
     flex-direction: unset;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
   }
   .footer-widgets-top .text-widgets {
-    width: 50%;
+    width: 49%;
   }
   .footer-widgets-top .subscribe {
-    width: 50%;
+    width: 49%;
   }
   .footer-widgets-top .subscribe .text-sub {
     width: 65%;
@@ -814,7 +860,6 @@ p {
     margin: 0;
   }
   .menu-show {
-    display: block;
     width: 73%;
     float: right;
     display: flex;
@@ -831,6 +876,10 @@ p {
     background: #fff;
     display: flex;
     align-items: center;
+    transition: 500ms ease;
+  }
+  .catg-menu [class^="submenu"]:hover{
+    background: #e1e1e1;
   }
   .catg-menu [class^="submenu"] .box-img {
     width: 50px;
@@ -851,6 +900,9 @@ p {
     padding: 0;
     color: #202833;
     font-weight: bold;
+  }
+  .menu-show [class^="submenu"]:hover a{
+    color: #CC000E;
   }
   .left-menu-1 {
     display: none;
@@ -1008,5 +1060,13 @@ p {
   }
   .widget-payment {
     width: 40%;
+  }
+  .nav{
+    z-index: 99;
+    background: #fff;
+  }
+  .custom{
+    box-shadow: unset;
+    border-radius: unset;
   }
 }
